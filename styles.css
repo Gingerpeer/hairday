@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/*
+  - main color - #d3644c
+  - contrast color - #f3e3d3
+*/
+* {
+  font-family: 'Montserrat', sans-serif;
+  --main-color: #d3644c;
+  --contrast-color: #f3e3d3;
+  --font-color: #0b0b0b;
+  color: var(--font-color);
+}
+
+h4{
+  font-size: 1.5em;
+  margin-left: 0.25em;
+}
+
+
+header img {
+  display: block;
+  max-height: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+@keyframes hover {
+  0% {
+    border-radius: 12px;
+  }
+  /* 25% {
+    border-radius: 50%;
+  } */
+  50% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 12px;
+  }
+}
+@keyframes card {
+  0% {
+    rotate: 0deg;
+  }
+  50%{
+    rotate: 20deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+nav {
+  background-color: var(--main-color);
+  padding: 0.25em;
+}
+nav ul{
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+nav li{
+  flex: 1;
+  text-decoration: none;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+nav a:hover {
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--main-color);
+  background-color: var(--contrast-color);
+  padding: 0.5em;
+  /* animation-name: hover;
+  animation-duration: 0.5s; */
+}
+
+main {
+  display: inline-grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  
+}
+main article {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#home{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 1;
+}
+#home h4{
+  text-align: center;
+  font-size: 2em;
+}
+main span{
+  display: flex;
+  margin: 0 5vw 5vh 5vw;
+}
+main span article {
+  min-width: 25vw;
+  margin: 1em;
+  border-radius: 12px;
+  box-shadow: 0.3em 0.3em 0.5em 0.1em;
+}
+main span article:hover{
+  animation-name: card;
+  animation-duration: 1s;
+}
+main span iframe{
+  border-radius: 12px;
+}
+footer{
+  display: flex;
+}
+footer img{
+  max-height: 5vw;
+  flex: 1;
+  margin-left: 2vw;
+}
+footer span {
+  position: absolute;
+  right: 0;
+  padding-top: 5vh;  
+  margin-right: 2vw;
+  color: var(--main-color);
+}
+
